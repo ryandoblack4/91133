@@ -1,0 +1,29 @@
+/* Seletores css   */
+
+table{
+
+/* Largura da tabela  */
+width: 100%;
+/* colocar uma borda */
+border: 2px solid;
+}
+
+td{
+    /* centralizar os elementos */
+    text-align: center;
+
+}
+
+thead{
+
+    background-color: rgb(119, 0, 255);
+}
+
+h1{
+     /* centralizar os elementos */
+     text-align: center;
+     color: black;
+     font-weight: bold;
+
+
+}

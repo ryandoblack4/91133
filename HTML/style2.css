@@ -1,0 +1,40 @@
+
+input{
+    width: 220px;
+    border-radius: 10 px; 
+}
+    
+    textarea{
+    width: 220px;
+    border-radius: 4px;
+    
+    }
+    
+    label{
+         color:rgb(7, 6, 95);
+         font-weight: bold;
+    }
+
+    button{
+        width: 100 px;
+        height: 30 px;
+        color:blue;
+        background-color: brown;
+    }
+
+    button:hover{
+
+        color: antiquewhite;
+        background-color: blue;
+        font-weight: bold;
+    }
+
+    form{
+
+        text-align: center;
+    }
+
+    h1{
+
+        text-align: center;
+    }
