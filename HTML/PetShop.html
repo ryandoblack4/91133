@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Alegria Animal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #ffcc00; text-align: center; padding: 10px;">
+        <img src="pet-logo.jpg" alt="Logo do Pet Shop" style="height: 80px;">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('inicio')">Início</a></li>
+                <li><a href="#" onclick="showSection('servicos')">Serviços</a></li>
+                <li><a href="#" onclick="showSection('sobre')">Sobre Nós</a></li>
+                <li><a href="#" onclick="showSection('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio" class="active" style="text-align: center;">
+        <img src="logo.jpg" alt="Imagem principal do Pet Shop" style="width: 100%; max-height: 400px; object-fit: cover;">
+        <h2>Bem-vindo ao Pet Shop Alegria Animal</h2>
+        <p>Seu pet em boas mãos!</p>
+    </section>
+    
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Banho e Tosa</li>
+            <li>Consultas Veterinárias</li>
+            <li>Vacinação</li>
+            <li>Hotel para Pets</li>
+        </ul>
+    </section>
+    
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>O Pet Shop Alegria Animal é dedicado ao cuidado e bem-estar dos seus bichinhos de estimação.</p>
+         <img src="logo.jpg" alt="Imagem principal do Pet Shop" style="width: 100%; max-height: 400px; object-fit: cover;">
+    </section>
+    
+    <section id="contato" class="active" style="text-align: center; background-color: #f0f8ff; padding: 20px; border-radius: 10px;">
+        <h2 style="color: #ff9900;">Fale Conosco</h2>
+        <form action="#" method="post" style="max-width: 500px; margin: auto;">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required style="width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc;">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required style="width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc;">
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required style="width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc; height: 100px;"></textarea>
+            
+            <button type="submit" style="background-color: #ff9900; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+        </form>
+    
+        <h3 style="margin-top: 20px;">Ou fale diretamente pelo WhatsApp</h3>
+        <a href="https://wa.me/5575982522404" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">
+            <img src="whatsapp.png" alt="WhatsApp" style="width: 20px; vertical-align: middle;"> Enviar mensagem no WhatsApp
+        </a>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2025 Pet Shop Alegria Animal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
